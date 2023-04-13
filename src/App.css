@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  /* font-family: "Roboto", sans-serif; */
+  background: #161623;
+  color: #fefdea;
+}
+
+.App {
+  min-height: 80vh;
+  max-width: 480px;
+  margin: 32px auto;
+  padding: 15px 35px;
+  border: 2px solid #fefdea2d;
+  border-radius: 5px;
+}
+
+.App h2 {
+  text-align: center;
+}
+
+.form-add {
+  max-width: 480px;
+  margin: auto;
+  box-shadow: 0 0 25px 0 rgb(169, 222, 249);
+  border-radius: 50px;
+  /* padding: 12px; */
+}
+
+.form-add form {
+  display: flex;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.form-add input {
+  width: 100%;
+  padding: 16px 32px;
+  border-radius: 40px 0 0 40px;
+  border: none;
+  outline: none;
+  background: #a9def9;
+  color: #161623;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.form-add button {
+  border: 1px solid;
+  border-radius: 0 50% 50% 0;
+  background: #a9def9;
+  border: none;
+  padding-right: 16px;
+}
+
+svg {
+  width: 32px;
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #fcf;
+  margin: 8px 0 0;
+}
+
+.todo-list:hover {
+  border-bottom: 2px solid #a9def9;
+}
+
+.todo-list * {
+  margin: 5px 1px;
+}
+
+.todo-list label {
+  width: 100%;
+  margin: 15px 0;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #fefdeaa6;
+  text-transform: capitalize;
+}
+
+.todo-list label:hover {
+  color: #fefdea;
+}
+
+.todo-list input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #fefdea27;
+}
+
+.todo-list svg {
+  height: 24px;
+  width: 24px;
+  background: #fcf;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todo-list button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.todo-list form {
+  display: flex;
+  width: 100%;
+  /* background: green; */
+  /* border: 1px solid white; */
+}
+
+.todo-list input[type="text"] {
+  width: 100%;
+  color: #a9def9;
+  padding: 5px 24px;
+  background: transparent;
+  border-radius: 10px 0 0 10px;
+  border: transparent;
+  outline: none;
+  font-size: medium;
+  font-weight: 600;
+}
